@@ -170,3 +170,4 @@ C:\Users\52233446852\Desktop\JogosAPI\JogosAPI\bin\Debug\net8.0\Swashbuckle.AspN
 C:\Users\52233446852\Desktop\JogosAPI\JogosAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\52233446852\Desktop\JogosAPI\JogosAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\52233446852\Desktop\JogosAPI\JogosAPI\obj\Debug\net8.0\JogosAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\52233446852\Desktop\JogosAPI\JogosAPI\obj\Debug\net8.0\JogosAPI.sourcelink.json

@@ -51,6 +51,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+
 // CORS
 builder.Services.AddCors(options =>
 {
@@ -63,6 +64,34 @@ builder.Services.AddCors(options =>
         });
 });
 
+
 var app = builder.Build();
+
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger(options =>
+    {
+        options.SerializeAsV2 = true;
+    });
+
+    app.UseSwaggerUI(options => // UseSwaggerUI is called only in Development.
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+        options.RoutePrefix = string.Empty;
+    });
+}
+
+
+
+//Adiciona o Cors(política criada)
+app.UseCors("CorsPolicy");
+
+//Adicionar o mapeamento dos controllers
+app.MapControllers();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.Run();

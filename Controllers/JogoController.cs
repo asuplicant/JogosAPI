@@ -17,6 +17,24 @@ namespace JogosAPI.Controllers
             _JogoRepository = JogoRepository;
         }
 
+
+        //-----------------------------------------------------
+        // Cadastrar Jogo
+        [HttpPost]
+        public IActionResult Post(Jogo novoJogo)
+        {
+            try
+            {
+                _JogoRepository.Cadastrar(novoJogo);
+
+                return Created();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
         //-----------------------------------------------------
         // Listar Jogo
         [HttpGet]
@@ -36,22 +54,6 @@ namespace JogosAPI.Controllers
             }
         }
 
-        //-----------------------------------------------------
-        // Cadastrar Jogo
-        [HttpPost]
-        public IActionResult Post(Jogo novoJogo)
-        {
-            try
-            {
-                _JogoRepository.Cadastrar(novoJogo);
-
-                return Created();
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
 
         //-----------------------------------------------------
         // Atualizar Jogo

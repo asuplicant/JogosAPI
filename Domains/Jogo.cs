@@ -18,7 +18,6 @@ namespace JogosAPI.Domains
         // O Required faz com que seja obrigatório preencher o campo.
         [Column(TypeName = "VARCHAR(50)")]
         [Required(ErrorMessage = "O nome do Jogo é obrigatório!")]
-
         public string? NomeDoJogo { get; set; }
 
 

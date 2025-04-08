@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "JogosAPI.Controllers.JogoController",
-    "Method": "Get",
-    "RelativePath": "api/Jogo",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "JogosAPI.Controllers.JogoController",
     "Method": "Post",
     "RelativePath": "api/Jogo",
     "HttpMethod": "POST",
@@ -23,6 +13,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JogosAPI.Controllers.JogoController",
+    "Method": "Get",
+    "RelativePath": "api/Jogo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

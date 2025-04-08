@@ -16,16 +16,6 @@
   },
   "paths": {
     "/api/Jogo": {
-      "get": {
-        "tags": [
-          "Jogo"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "post": {
         "tags": [
           "Jogo"
@@ -49,6 +39,16 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Jogo"
+        ],
         "responses": {
           "200": {
             "description": "OK"
